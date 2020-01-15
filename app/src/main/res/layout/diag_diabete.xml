@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/diab">
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        style="@style/titre"
+        android:text="Glycimie"/>
+
+    <EditText
+        android:id="@+id/glycimie"
+        android:hint="g/L"
+        android:inputType="numberDecimal"
+        android:ems="5"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/groupbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <RadioButton
+            style="@style/titre"
+            android:text="avant repas"
+            android:id="@+id/av"/>
+        <RadioButton
+            style="@style/titre"
+            android:text="apres repas"
+            android:checked="true"
+            android:id="@+id/ap"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ajouter"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nvpatient"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+    <TextView
+        style="@style/titre"
+        android:text="Nom :"/>
+    <EditText
+        android:id="@+id/nom"
+        android:ems="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/titre"
+            android:text="Prenom :"/>
+        <EditText
+            android:id="@+id/prenom"
+            android:ems="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/titre"
+            android:text="Age :"/>
+        <EditText
+            android:id="@+id/age"
+            android:ems="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/lay"
+        android:gravity="center"
+        android:visibility="visible"
+        android:id="@+id/maladie">
+
+        <TextView
+            style="@style/titre"
+            android:text="Maladie :"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="9dp"
+            />
+
+        <LinearLayout
+            style="@style/lay"
+
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/diabetcheck"
+                style="@style/titre"
+                android:text="Diabete"/>
+            <CheckBox
+                android:id="@+id/tensioncheck"
+                style="@style/titre"
+                android:text="Tension"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:visibility="gone"
+        style="@style/lay"
+        android:id="@+id/type">
+
+        <TextView
+            style="@style/titre"
+            android:text="type diabete :"/>
+
+        <RadioGroup
+            android:id="@+id/groupbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:checkedButton="@id/t1"
+            >
+
+            <RadioButton
+                style="@style/titre"
+                android:text="Type 1"
+                android:id="@+id/t1"
+                />
+            <RadioButton
+                style="@style/titre"
+                android:text="Type 2"
+                android:id="@+id/t2"/>
+            <RadioButton
+                style="@style/titre"
+                android:text="Type 3"
+                android:id="@+id/t3"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:layout_marginLeft="0dp"
+        android:id="@+id/valide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ajouter"/>
+</LinearLayout>

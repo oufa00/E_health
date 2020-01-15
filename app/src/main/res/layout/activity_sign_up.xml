@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".sign_up">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/lay">
+
+        <TextView
+            style="@style/formnom"
+            android:text="Nom :"/>
+
+        <EditText
+            android:id="@+id/nom"
+            style="@style/formedit"
+            android:inputType="textCapWords"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/lay">
+
+        <TextView
+            style="@style/formnom"
+            android:text="Prenom:"/>
+
+        <EditText
+            android:id="@+id/prenom"
+            style="@style/formedit"
+            android:inputType="textCapWords"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/lay">
+
+        <TextView
+            style="@style/formnom"
+            android:text="Adresse :"/>
+
+        <EditText
+            android:id="@+id/adress"
+            style="@style/formedit"
+            android:inputType="textCapWords"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/lay">
+
+        <TextView
+            style="@style/formnom"
+            android:text="Age :"/>
+
+        <EditText
+            android:id="@+id/age"
+            style="@style/formedit"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/lay">
+
+        <TextView
+            style="@style/formnom"
+            android:text="Telephone:"/>
+
+        <EditText
+            android:id="@+id/telephone"
+            style="@style/formedit"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/lay">
+
+        <TextView
+            style="@style/formnom"
+            android:text="Email :" />
+
+        <EditText
+            android:id="@+id/emailin"
+            style="@style/formedit"
+            android:layout_marginLeft="10dp"
+            android:hint="Adresse e-mail"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/lay">
+
+        <TextView
+            style="@style/formnom"
+            android:text="Password :"/>
+        <EditText
+            android:id="@+id/passwordin"
+            android:layout_marginLeft="10dp"
+            style="@style/formedit"
+            android:inputType="textPassword"
+            android:hint="********"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/lay">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            style="@style/titre"
+            android:text="You are :"/>
+
+        <LinearLayout
+            style="@style/lay"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/doctorcheck"
+                style="@style/titre"
+                android:text="Medecin"/>
+            <CheckBox
+                android:id="@+id/patientcheck"
+                style="@style/titre"
+                android:text="Patient"/>
+        </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            style="@style/lay"
+            android:visibility="gone"
+            android:id="@+id/maladie">
+
+            <TextView
+                style="@style/titre"
+                android:text="Maladie :"/>
+
+            <LinearLayout
+                style="@style/lay"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/diabetcheck"
+                    style="@style/titre"
+                    android:text="Diabete"/>
+                <CheckBox
+                    android:id="@+id/tensioncheck"
+                    style="@style/titre"
+                    android:text="Tension"/>
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                style="@style/lay"
+                android:id="@+id/type">
+
+                <TextView
+                    style="@style/titre"
+                    android:text="type diabete :"/>
+
+                <RadioGroup
+                    android:id="@+id/groupbutton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:checkedButton="@id/ty1">
+
+                    <RadioButton
+                        android:id="@+id/ty1"
+                        style="@style/titre"
+                        android:text="Type 1"
+                        android:onClick="check1"/>
+                    <RadioButton
+                        style="@style/titre"
+                        android:text="Type 2"
+                        android:onClick="check1"/>
+                    <RadioButton
+                        style="@style/titre"
+                        android:text="Type 3"
+                        android:onClick="check1"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+    <Button
+        android:background="@drawable/btn"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valider"
+        android:onClick="create"/>
+</LinearLayout>
+</ScrollView>

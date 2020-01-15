@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Ajouter Medecin"
+        android:icon="@mipmap/ic_add_circle_outline_black_24dp"
+        android:id="@+id/add_doct"/>
+
+    <item android:title="Mes Medecins"
+        android:icon="@mipmap/ic_remove_circle"
+        android:id="@+id/consulte_doct"/>
+
+    <item android:title="Paramètres"
+        android:icon="@mipmap/ic_settings_applications_black_24dp"
+        android:id="@+id/settings"/>
+
+    <item android:title="Ajouter Maladie"
+        android:icon="@mipmap/ic_add_circle_outline_black_24dp"
+        android:id="@+id/addm"/>
+
+    <item android:title="Déconnecter"
+        android:icon="@mipmap/ic_exit_to_app_black_24dp"
+        android:id="@+id/log_out"/>
+
+</menu>

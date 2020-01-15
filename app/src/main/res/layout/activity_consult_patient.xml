@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".consult_patient">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_nom"
+        android:text="nom"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearance"/>
+
+    <TextView
+        android:id="@+id/tx_prenom"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="prenom"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx_nom"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="1dp" />
+
+    <TextView
+        android:id="@+id/cons_diab"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="diabet"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx_prenom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="1dp" />
+    <TextView
+        android:id="@+id/cons_tens"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="tension"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cons_diab"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginEnd="2dp"
+        android:layout_marginLeft="1dp" />
+    <TextView
+        android:id="@+id/cons_kach_3afssa"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="contacter"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cons_tens"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="1dp" />
+</LinearLayout>
+    <ListView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_patient"
+        />
+</LinearLayout>

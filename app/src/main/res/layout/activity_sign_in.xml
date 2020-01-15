@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back2"
+    tools:context=".sign_in">
+
+    <LinearLayout
+        style="@style/lay"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            style="@style/formnom"
+            android:text="Email :"/>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/formedit"
+            android:layout_marginLeft="10dp"
+            android:hint="Adresse e-mail"
+            android:inputType="textEmailAddress" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/lay"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            style="@style/formnom"
+            android:text="password"/>
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/formedit"
+            android:layout_marginLeft="10dp"
+            android:hint="********"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/lay">
+
+        <RadioGroup
+            android:id="@+id/groupbutton"
+            style="@style/lay"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/patient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Patient"
+                android:checked="true"
+                android:onClick="check">
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medecin"
+                android:onClick="check"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/btn"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="authentification"
+        android:onClick="signin"/>
+
+    <Button
+        android:background="@drawable/btn"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Inscription"
+        android:onClick="signup"/>
+
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:id="@+id/login_fb">-->
+
+    <!--</com.facebook.login.widget.LoginButton>-->
+
+
+</LinearLayout>

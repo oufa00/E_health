@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/maladiee"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Dialoge Confirmation"
+    android:textSize="30dp"
+    android:textStyle="bold"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dialoge Confirmation"
+        android:textSize="20dp"
+        android:id="@+id/verifier"
+        android:textStyle="italic"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:gravity="center"
+        android:visibility="gone"
+        style="@style/lay"
+        android:id="@+id/type">
+
+        <TextView
+            style="@style/titre"
+            android:text="type diabete :"/>
+
+        <RadioGroup
+            android:id="@+id/groupbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:checkedButton="@id/t1"
+            >
+
+            <RadioButton
+                style="@style/titre"
+                android:text="Type 1"
+                android:id="@+id/t1"
+                />
+            <RadioButton
+                style="@style/titre"
+                android:text="Type 2"
+                android:id="@+id/t2"/>
+            <RadioButton
+                style="@style/titre"
+                android:text="Type 3"
+                android:id="@+id/t3"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="confirmer"
+            android:id="@+id/conf"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="refuser"
+            android:id="@+id/ref"/>
+    </LinearLayout>
+
+
+</LinearLayout>

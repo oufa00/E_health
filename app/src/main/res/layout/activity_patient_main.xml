@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_pat"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back3"
+    android:layout_height="match_parent"
+    tools:context=".patient_main">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_nom"
+        android:text="NOM"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearance"/>
+
+    <TextView
+        android:id="@+id/tx_prenom"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="PRENOM"
+        android:textSize="20dp"
+        android:textAppearance="?android:textAppearance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx_nom"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:id="@+id/tx_age"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="AGE"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textAppearance="?android:textAppearance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx_nom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+</LinearLayout>
+    <ListView
+        android:background="@drawable/back1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/list_pat"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp">
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="fab"
+        android:layout_gravity="end|bottom"
+        android:src="@mipmap/ic_add_black_24dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+</LinearLayout>

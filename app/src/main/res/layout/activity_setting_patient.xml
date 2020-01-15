@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".setting_patient">
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/lay">
+    <TextView
+        style="@style/formnom"
+        android:text="Nom :"/>
+
+    <EditText
+        android:id="@+id/nom"
+        style="@style/formedit"
+        android:inputType="textCapWords"
+        />
+
+</LinearLayout>
+<LinearLayout
+style="@style/lay">
+
+<TextView
+    style="@style/formnom"
+    android:text="Prenom:"/>
+
+<EditText
+    android:id="@+id/prenom"
+    style="@style/formedit"
+    android:inputType="textCapWords"
+    />
+
+</LinearLayout>
+<LinearLayout
+style="@style/lay">
+
+<TextView
+    style="@style/formnom"
+    android:text="Adresse :"/>
+
+<EditText
+    android:id="@+id/adress"
+    style="@style/formedit"
+    android:inputType="textCapWords"
+    />
+
+</LinearLayout>
+<LinearLayout
+style="@style/lay">
+
+<TextView
+    style="@style/formnom"
+    android:text="Age :"/>
+
+<EditText
+    android:id="@+id/age"
+    style="@style/formedit"
+    android:inputType="number"
+    />
+
+</LinearLayout>
+
+<LinearLayout
+style="@style/lay">
+
+<TextView
+    style="@style/formnom"
+    android:text="Telephone:"/>
+
+<EditText
+    android:id="@+id/telephone"
+    style="@style/formedit"
+    android:inputType="number"
+    />
+
+</LinearLayout>
+
+<LinearLayout style="@style/lay">
+
+<TextView
+    style="@style/formnom"
+    android:text="Email :" />
+
+<EditText
+    android:id="@+id/emailin"
+    style="@style/formedit"
+    android:layout_marginLeft="10dp"
+    android:hint="Adresse e-mail"
+    android:inputType="textEmailAddress" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/titre"
+        android:text="changer le mot de paase"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kaka"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/oldpass"
+        style="@style/lay">
+
+        <TextView
+            style="@style/titre"
+            android:text="OLD Password :"/>
+        <EditText
+            android:layout_marginLeft="10dp"
+            style="@style/edit"
+            android:id="@+id/opass"
+            android:inputType="textPassword"
+            android:hint="********"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newpass"
+        android:visibility="gone"
+        style="@style/lay">
+
+        <TextView
+            style="@style/titre"
+            android:text="NEW Password :"/>
+        <EditText
+            android:layout_marginLeft="10dp"
+            style="@style/edit"
+            android:inputType="textPassword"
+            android:id="@+id/npass"
+            android:hint="********"/>
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@drawable/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editpat"
+            android:text="sauvegarder"/>
+
+
+    </LinearLayout>
+</ScrollView>

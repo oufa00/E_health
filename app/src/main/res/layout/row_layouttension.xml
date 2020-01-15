@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tx_date"
+        android:text="date"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:textAppearance="?android:textAppearance"/>
+
+    <TextView
+        android:id="@+id/tx_min"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="min"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tx_date"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/tx_max"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="max"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
